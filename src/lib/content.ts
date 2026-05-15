@@ -7,10 +7,9 @@ export const site = {
 } as const;
 
 export const nav = [
-  { href: "#tonight", label: "About tonight" },
+  { href: "#tonight", label: "About" },
   { href: "#memories", label: "Memories" },
   { href: "#guestbook", label: "Messages" },
-  { href: "#playlist", label: "Playlist" },
   { href: "#surprise", label: "Surprise" },
 ] as const;
 
