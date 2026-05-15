@@ -4,31 +4,14 @@ import { FallingPhotos } from "@/components/FallingPhotos";
 import { Sparkles } from "@/components/Sparkles";
 import { Reveal } from "@/components/Reveal";
 import { site, surprise } from "@/lib/content";
+import { playSurpriseSound } from "@/lib/surprise-sound";
 import { useCallback, useState } from "react";
-
-function playChime() {
-  try {
-    const ctx = new AudioContext();
-    const osc = ctx.createOscillator();
-    const gain = ctx.createGain();
-    osc.connect(gain);
-    gain.connect(ctx.destination);
-    osc.frequency.setValueAtTime(523.25, ctx.currentTime);
-    osc.frequency.exponentialRampToValueAtTime(784, ctx.currentTime + 0.15);
-    gain.gain.setValueAtTime(0.08, ctx.currentTime);
-    gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.6);
-    osc.start(ctx.currentTime);
-    osc.stop(ctx.currentTime + 0.6);
-  } catch {
-    /* audio optional */
-  }
-}
 
 export function Surprise() {
   const [burst, setBurst] = useState(0);
 
   const handleOpen = useCallback(() => {
-    playChime();
+    playSurpriseSound();
     setBurst((n) => n + 1);
   }, []);
 

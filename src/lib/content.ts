@@ -46,30 +46,30 @@ export type GuestbookNote = {
 export const guestbook: GuestbookNote[] = [
   {
     id: "s1",
-    author: "SoSồ IT",
-    text: "Chúc Châm sinh nhật zuize, đi chơi vui ạ",
+    author: "Chigau",
+    text: "Chúc Châm sinh nhật LGBT 😽 \nL: luonvuituoi \nG: giàu \nB: bậc thầy Figma \nT: thức đêm ít thui",
     style: "sticky",
     color: "butter",
     rotate: -2,
   },
   {
     id: "r1",
-    author: "Nói hộ Hachi",
-    text: "SoSồ needs you to stay healthy and happy",
+    author: "IMPORTANT !!!",
+    text: "SoSồ needs you to stay healthy and happy ☺️",
     style: "receipt",
   },
   {
     id: "s2",
     author: "SoSồ",
-    text: "I love your design",
+    text: "I love your design 🌸",
     style: "sticky",
     color: "blush",
     rotate: 3,
   },
   {
     id: "s3",
-    author: "Chigau",
-    text: "Chúc Châm lun xinh xắn iu đời iu bản thân iu mèo nhaaa",
+    author: "SoSồ IT",
+    text: "Châm đi chơi vui nha ròi về cíu iemm 🙏",
     style: "sticky",
     color: "sage",
     rotate: -1,
@@ -104,7 +104,7 @@ export const playlist = {
 
 export const surprise = {
   title: "One last thing…",
-  body: "We saved your surprise for the end—like dessert after the guestbook.",
-  cta: "Open your surprise",
+  body: "Yayyyyyyyyyyy",
+  cta: "Open the gift 🎁",
   href: "#",
 } as const;

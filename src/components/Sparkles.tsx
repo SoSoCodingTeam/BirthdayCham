@@ -15,7 +15,7 @@ export function Sparkles() {
 
   const pieces = useMemo(
     () =>
-      Array.from({ length: 108 }, (_, i) => {
+      Array.from({ length: 200 }, (_, i) => {
         const delaySec = (i % 30) * 0.05;
         const durationSec = Math.min(4, TOTAL_MS / 1000 - delaySec - 0.1);
 
