@@ -2,7 +2,7 @@ export const site = {
   name: "Châm",
   cafeName: "Châm's Birthday",
   reservationFor: "SoSồ",
-  date: "May 15, 2026",
+  date: "May 16, 2026",
   hours: "Open today only · Doors at 9am",
 } as const;
 
